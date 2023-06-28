@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="homePageStyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fil0 { fill: none; }
+        .fil1 { fill: #2B75B9; fill-rule: nonzero; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerTop container">
+            <div class="headerLeft">
+                <div class="logo">
+                    <a href="homePage.html">
+                        <img src="https://regulator.gov.az/uploads/logonew.svg" alt="">
+                    </a>
+                </div>
+                <div class="headtitle">Enerji Məsələlərini Tənzimləmə Agentliyi</div>
+            </div>
+            <div class="headerRight">
+                <div class="topUp">
+                    <div class="btn socialList">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/aeraregulator"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCiEo0dpI9xsYxUuWcrZ2GAQ/videos"><i class="fab fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/aeraregulator"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/aeraregulator"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/aera.gov.az/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn contactCenter">
+                        <img src="./img/telephone icon.png" alt="">
+                        <span class="title">Çağrı Mərkəzi : <strong>974</strong></span>
+                    </div>
+                    <div class="btn langSet">
+                        <i class='fas fa-globe-americas globeIcon' style='font-size:20px;color:#3688d4'></i>
+                        <span class="title">AZ</span>
+                        <div class="dropDown">
+                            <ul>
+                                <li>EN</li>
+                                <li>AZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="topBottom">
+                    <a href="#" class="btn">
+                        <span>E-xidmətlər</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom container">
+            <div class="mainMenu">
+                <ul>
+                    <li class="dropdown dropdown-7">
+                        <a href="homePage.html"><span>ANA SƏHİFƏ</span></a>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            AGENTLİK
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Haqqımızda</a></li>
+                            <li class="dropdown_item-2"><a href="#">Agentliyin Nizamnaməsi</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Rəhbərlik
+                                    <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">İdarə Heyətinin sədri</a></li>
+                                    <li class="dropdown_item-2"><a href="#">İdarə Heyətinin sədr müavinləri</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Təşkilati struktur</a></li>
+                            <li class="dropdown_item-5"><a href="#">Beynəlxalq əməkdaşlıq</a></li>
+                            <li class="dropdown_item-6"><a href="#">Hesabatlılıq</a></li>
+                            <li class="dropdown_item-7"><a href="#">Korrupsiyaya qarşı mübarizə</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            HÜQUQİ AKTLAR
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Qanunlar</a></li>
+                            <li class="dropdown_item-2"><a href="#">AAzərbaycan Respublikası Prezidentinin fərman və sərəncamları</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Azərbaycan Respublikası Nazirlər Kabinetinin qərar və sərəncamları
+                                </a>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Azərbaycan Respublikası Energetika Nazirliyinin aktları</a></li>
+                            <li class="dropdown_item-5"><a href="#">Agentliyin şöbələrinin və departamentinin əsasnamələri</a></li>
+                            <li class="dropdown_item-6"><a href="#">Digər hüquqi sənədlər</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            FƏALİYYƏT İSTİQAMƏTLƏRİ
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Nəzarət məsələləri</a></li>
+                            <li class="dropdown_item-2"><a href="#">Qanunvericilik təşəbbüsləri</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar"><a href="#">İstehlakçıların hüquqlarının qorunması</a></li>
+                            <li class="dropdown_item-4"><a href="#">Mübahisələrin həlli və şikayətlərə baxılması</a></li>
+                            <li class="dropdown_item-5"><a href="#">Lisenziyalar və icazələr</a></li>
+                            <li class="dropdown_item-6"><a href="#">Tarif (qiymət) tənzimlənməsində iştirak</a></li>
+                            <li class="dropdown_item-4"><a href="#">Xidmətlərin keyfiyyətinə nəzarət </a></li>
+                            <li class="dropdown_item-5"><a href="#">İcrası məcburi olan göstərişlər</a></li>
+                            <li class="dropdown_item-6"><a href="#">İnvestisiya mühiti</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            İSTEHLAKÇILAR
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Əhali
+                                    <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Elektrik, qaz və istilik şəbəkəsinə qoşulma</a></li>
+                                </ul>
+                            </li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Qeyri əhali
+                                    <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Qeyri-əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Elektrik və qaz şəbəkəsinə qoşulma</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Texniki Şuralar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-2"><a href="#">Elektrik enerjisi və qaz təchizatı üzrə müqavilə şərtləri</a></li>
+                            <li class="dropdown_item-4"><a href="#">Elektrik, qaz və istilik təchizatının dayandırılmasının şərtləri</a></li>
+                            <li class="dropdown_item-5"><a href="#">İstehlakçı məmnuniyyəti</a></li>
+                            <li class="dropdown_item-6"><a href="#">Elektrik və qaz təchizatı şəbəkələrində mühafizə zonaları</a></li>
+                            <li class="dropdown_item-7"><a href="#">Enerji təchizatçısına müraciət et</a></li>
+                            <li class="dropdown_item-7"><a href="#">Tariflər (qiymətlər)</a></li>
+                            <li class="dropdown_item-7"><a href="#">Borcunu öyrən</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            MEDİA
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Xəbərlər
+                                    <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Press-relizlər</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Statistik məlumatlar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-2"><a href="#">Karyera bloqu</a></li>
+                            <li class="dropdown_item-4"><a href="#">Şəkillər</a></li>
+                            <li class="dropdown_item-5"><a href="#">Videolar</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            ƏLAQƏ
+                            <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-2"><a href="#">Filiallar</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Sual-Cavab
+                                    <div class="arrowDown"><img src="./img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Elektrik enerjisi</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Təbii qaz təchizatı</a></li>
+                                    <li class="dropdown_item-2"><a href="#">İstilik enerjisi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Bizimlə əlaqə</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <button class="searchButton">
+                    <img src="./img/search.png" alt="">
+                    <span>Axtarış...</span>
+                </button>
+            </div>
+        </div>
+        <div class="headerMobile showMenu">
+            <div class="headerMob">
+                <a href="homePage.html" class="logoMob">
+                    <img src="https://regulator.gov.az/uploads/logonew.svg" alt="">
+                </a>
+                <span class="headtitle">Enerji Məsələlərini Tənzimləmə Agentliyi</span>
+                <div class="rightSide">
+                    <div class="langSet langSetMob">
+                        <span class="title">AZ</span>
+                        <div class="dropDownMob">
+                            <ul>
+                                <li>EN</li>
+                                <li>AZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="searchButtonMob">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" id="openMenu">
+                        <span class="fas fa-bars"></span>
+                    </a>
+                    <div id="closeMenu">
+                        <span class="fas fa-times"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileLinks">
+                <div class="mainMenuMobile">
+                    <ul class="parentUl">
+                        <li><a href="homePage.html" class="listA"><span>ANA SƏHİFƏ</span></a></li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">AGENTLİK</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        AGENTLİK<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Haqqımızda</a></li>
+                                <li><a href="#" class="listB ">Agentliyin Nizamnaməsi</a></li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Rəhbərlik</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Rəhbərlik<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">İdarə Heyətinin sədri</a></li>
+                                        <li><a href="#">İdarə Heyətinin sədr müavinləri</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB">Təşkilati struktur</a></li>
+                                <li><a href="#" class="listB">Beynəlxalq əməkdaşlıq</a></li>
+                                <li><a href="#" class="listB">Hesabatlılıq</a></li>
+                                <li><a href="#" class="listB">Korrupsiyaya qarşı mübarizə</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">HÜQUQİ AKTLAR</a>
+                            <ul class="submenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        HÜQUQİ AKTLAR<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Qanunlar</a></li>
+                                <li><a href="#" class="listB ">Azərbaycan Respublikası Prezidentinin fərman və sərəncamları</a></li>
+                                <li><a href="#" class="listB">Azərbaycan Respublikası Nazirlər Kabinetinin qərar və sərəncamları</a></li>
+                                <li><a href="#" class="listB">Azərbaycan Respublikası Energetika Nazirliyinin aktları</a></li>
+                                <li><a href="#" class="listB">Agentliyin şöbələrinin və departamentinin əsasnamələri</a></li>
+                                <li><a href="#" class="listB">Digər hüquqi sənədlər</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">FƏALİYYƏT İSTİQAMƏTLƏRİ</a>
+                            <ul class="submenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        FƏALİYYƏT İSTİQAMƏTLƏRİ<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Nəzarət məsələləri</a></li>
+                                <li><a href="#" class="listB ">Qanunvericilik təşəbbüsləri</a></li>
+                                <li><a href="#" class="listB">İstehlakçıların hüquqlarının qorunması</a></li>
+                                <li><a href="#" class="listB">Mübahisələrin həlli və şikayətlərə baxılması</a></li>
+                                <li><a href="#" class="listB">Lisenziyalar və icazələr</a></li>
+                                <li><a href="#" class="listB">Tarif (qiymət) tənzimlənməsində iştirak</a></li>
+                                <li><a href="#" class="listB">Xidmətlərin keyfiyyətinə nəzarət </a></li>
+                                <li><a href="#" class="listB">İcrası məcburi olan göstərişlər</a></li>
+                                <li><a href="#" class="listB">İnvestisiya mühiti</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">İSTEHLAKÇILAR</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        İSTEHLAKÇILAR<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Əhali</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Əhali<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                        <li><a href="#">Elektrik, qaz və istilik şəbəkəsinə qoşulma</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Qeyri əhali</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Qeyri əhali<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Qeyri-əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                        <li><a href="#">Elektrik və qaz şəbəkəsinə qoşulma</a></li>
+                                        <li><a href="#">Texniki Şuralar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB">Elektrik enerjisi və qaz təchizatı üzrə müqavilə şərtləri</a></li>
+                                <li><a href="#" class="listB ">Elektrik, qaz və istilik təchizatının dayandırılmasının şərtləri</a></li>
+                                <li><a href="#" class="listB">İstehlakçı məmnuniyyəti</a></li>
+                                <li><a href="#" class="listB">Elektrik və qaz təchizatı şəbəkələrində mühafizə zonaları</a></li>
+                                <li><a href="#" class="listB">Enerji təchizatçısına müraciət et</a></li>
+                                <li><a href="#" class="listB">Tariflər (qiymətlər)</a></li>
+                                <li><a href="#" class="listB">Borcunu öyrən </a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">MEDİA</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        MEDİA<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Xəbərlər</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Xəbərlər<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Press-relizlər</a></li>
+                                        <li><a href="#">Statistik məlumatlar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB"> Karyera bloqu</a></li>
+                                <li><a href="#" class="listB ">Şəkillər</a></li>
+                                <li><a href="#" class="listB">Videolar</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">ƏLAQƏ</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        ƏLAQƏ<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Filiallar</a></li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Sual-Cavab</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Sual-Cavab<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Elektrik enerjisi </a></li>
+                                        <li><a href="#">Təbii qaz təchizatı</a></li>
+                                        <li><a href="#">İstilik enerjisi </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB ">Bizimlə əlaqə</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="searchModal">
+            <div class="modalBox">
+                <div class="modalTop">
+                    <img src="./img/close.png" alt="">
+                </div>
+                <div class="modalBottom">
+                    <form action="">
+                        <div class="inputGroup">
+                            <input type="text" placeholder="Axtarış üçün yazın">
+                            <button type="submit">Axtarış</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider container">
+        <div class="sliderNav">
+            <div class="prev">Əvvəlki </div>
+            <div class="next">Növbəti </div>
+        </div>
+        <div class="owl-carousel carousel1">
+            <div class="sliderItem">
+                <img src="/img/sliderItem1.jpg" alt="">
+                <div class="sliderItemTitle">
+                    <a href="#" class="sliderText"> AERA və AYİB-nin nümayəndələri arasında növbəti görüş keçirilib</a>
+                    <a href="#" class="sliderButton">Ətraflı oxu</a>
+                </div>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/sliderItem2.jpg" alt="">
+                <div class="sliderItemTitle">
+                    <a href="#" class="sliderText"> Ulu Öndər Heydər Əliyevin anadan olmasının 100-cü ildönümünə həsr olunmuş tədbir keçirilib</a>
+                    <a href="#" class="sliderButton">Ətraflı oxu</a>
+                </div>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/sliderItem3.jpg" alt="">
+                <div class="sliderItemTitle">
+                    <a href="#" class="sliderText"> AERA və AYİB-nin nümayəndələri arasında növbəti görüş keçirilib</a>
+                    <a href="#" class="sliderButton">Ətraflı oxu</a>
+                </div>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/sliderItem4.jpeg" alt="">
+                <div class="sliderItemTitle">
+                    <a href="#" class="sliderText"> Energetika Nazirliyinin və AERA-nın əməkdaşlarından ibarət &quot;Ağdam&quot; komandası &quot;Səmərəli həll&quot; nominasiyası üzrə mükafata layiq görülüb</a>
+                    <a href="#" class="sliderButton">Ətraflı oxu</a>
+                </div>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/sliderItem5.jpg" alt="">
+                <div class="sliderItemTitle">
+                    <a href="#" class="sliderText"> AERA-nın İdarə Heyətinin sədri Əbu-Dabi Enerji Şirkətinin nümayəndələrini qəbul edib</a>
+                    <a href="#" class="sliderButton">Ətraflı oxu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container kom">
+        <div class="blockContNew ">
+            <a href="#">
+                <div class="center">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2362px" height="2362px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 2362 2362"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                            <defs>
+                                <style type="text/css">
+                                    <![CDATA[
+                                    .fil0 { fill: none; }
+                                    .fil1 { fill: #2B75B9; fill-rule: nonzero; }
+                                    ]]>
+                                </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                                <metadata id="CorelCorpID_0Corel-Layer" />
+                                <rect class="fil0" x="-0.9" y="0.9" width="2362" height="2362" />
+                                <path class="fil1" d="M1058.51 1567.95c28.37,-433.28 -168.47,-813.34 -203.69,-877.43l95.11 -134.58 101.27 143.18c3.11,4.36 8.22,6.99 13.59,6.99 5.36,0 10.47,-2.63 13.55,-6.99l101.36 -143.18 101.35 143.18c3.11,4.36 8.14,6.99 13.6,6.99 5.36,0 10.44,-2.63 13.55,-6.99l101.6 -143.26 95.41 134.66c-35.27,64.16 -232.02,444.15 -203.71,877.43l-242.99 0zm-428.23 -499.39l-4.37 -7.16c-63.83,-102.67 -97.56,-221.05 -97.56,-342.23 0,-359.41 292.31,-651.77 651.68,-651.77 359.36,0 651.73,292.36 651.73,651.77 0,125.09 -35.77,246.7 -103.51,351.63 -63.3,97.9 -139,222.15 -164.24,316.98l-68.21 180.17 -160.93 0c-31.12,-463.5 201.98,-866 204.36,-869.94 3.32,-5.71 3.04,-12.77 -0.75,-18.14l-115.08 -162.37c-3.11,-4.49 -8.19,-7.06 -13.6,-7.06 -5.32,0 -10.47,2.57 -13.55,7.06l-101.6 143.19 -101.35 -143.19c-6.19,-8.85 -20.92,-8.85 -27.16,0l-101.35 143.19 -101.31 -143.19c-6.23,-8.85 -20.95,-8.85 -27.16,0l-114.74 162.37c-3.83,5.37 -4.07,12.43 -0.75,18.14 2.38,3.94 235.48,406.44 204.37,869.94l-157.58 0 -76.99 -189.77c-27.85,-96.67 -107.46,-224.74 -160.35,-309.62zm997.74 337.72c25.15,-96.8 116.94,-238.7 156.08,-299.38 74.64,-115.69 114.24,-249.77 114.24,-387.73 0,-396.05 -322.31,-718.27 -718.31,-718.27 -396.04,0 -718.18,322.22 -718.18,718.27 0,133.69 37.13,264.16 107.5,377.33l4.41 7.1c51.24,82.31 128.51,206.65 153.29,294.49l69.58 171.72c-46.54,8.45 -81.85,48.94 -81.85,97.94 0,21.39 6.71,41.18 18.13,57.38l894.26 0c11.45,-16.2 18.15,-35.99 18.15,-57.38 0,-48 -33.99,-88.14 -79.23,-97.65l60.76 -160.41 1.17 -3.41zm-895.07 345.22c-11.45,16.27 -18.17,36.07 -18.17,57.49 0,21.37 6.73,41.17 18.17,57.43l894.18 0c11.49,-16.26 18.19,-36.06 18.19,-57.43 0,-21.42 -6.7,-41.22 -18.19,-57.49l-894.18 0zm-0.02 141.29c-11.42,16.22 -18.15,36.05 -18.15,57.39 0,37.09 20.2,69.42 50.2,86.62l830.13 0c30,-17.2 50.21,-49.53 50.21,-86.62 0,-21.34 -6.7,-41.17 -18.16,-57.39l-894.23 0zm95.64 170.38l0 44.66c0,50.79 41.13,91.95 91.95,91.95l99.97 0 -0.32 3.24c0,88.3 71.57,159.89 159.82,159.89 88.33,0 159.91,-71.59 159.91,-159.89l-0.35 -3.24 99.99 0c50.74,0 91.95,-41.16 91.95,-91.95l0 -44.66 -702.92 0z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="title">Elektrik enerjisi</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="center">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" xml:space="preserve" width="2362px" height="2362px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2362 2362" class="svgicon replaced-svg">
+                            <defs>
+                             <style type="text/css">
+                              <![CDATA[
+                               .fil0 {fill:none}
+                               .fil1 {fill:#2B75B9}
+                              ]]>
+                             </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                             <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                             <rect class="fil0" x="-0.9" y="0.9" width="2362" height="2362"></rect>
+                             <path class="fil1" d="M931.01 1864.69l0 -1.51c0,-1.2 0,-2.1 0.27,-3.3 0,-0.91 0.3,-1.5 0.3,-2.41 0.3,-2.1 0.63,-3.9 0.63,-6l0 -0.33c0.57,-2.38 0.57,-5.08 0.87,-7.18 0.33,-0.9 0.33,-1.17 0.33,-1.51 29.71,-223.2 223.18,-539.24 306.4,-747.43 -0.1,4.1 -0.11,8.22 -0.07,12.35 2.89,199.72 199.72,435.76 185.57,648.26 0.72,12.33 0.91,24.6 0.53,36.8 0.85,29.48 -1.2,58.61 -6.88,87.27 55.14,-44.84 105.01,-95.35 149.51,-151.4 2.14,31.38 2.66,61.3 1.83,89.89 0.32,12.83 0.34,25.36 0.19,37.72 3.37,240.68 -71.01,399.91 -170.28,482.93 107.81,-34.2 210.63,-96.43 299.53,-191.46 591.53,-632.08 -163.12,-1060.77 -56.18,-1651.1 -183.22,227.12 -21.33,332.27 -155.58,558.48 78.68,-302.22 -374.95,-701.77 -106.08,-1053.86 -468.05,257.45 -328.95,772.38 -547.32,1159.91 98.5,-175.75 -49.9,-549.16 -216.61,-663.92 202.61,289.15 -207.97,754.79 -185.45,1172.89 8.24,367.38 309.77,642.58 645.81,693.11 -89.18,-61.01 -153.4,-183.92 -149.67,-364.26 -0.44,-16.24 -0.3,-32.99 0.53,-50.28 -1.34,-26.38 -0.88,-54.21 1.82,-83.66z"></path>
+                            </g>
+                           </svg>
+                    </div>
+                <div class="title">Təbii qaz təchizatı</div>
+            </div>
+            </a>
+            <a href="#">
+                <div class="center">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" xml:space="preserve" width="2362px" height="2362px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2362 2362" class="svgicon replaced-svg">
+                            <defs>
+                             <style type="text/css">
+                              <![CDATA[
+                               .fil0 {fill:none}
+                               .fil1 {fill:#2B75B9}
+                              ]]>
+                             </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                             <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                             <rect class="fil0" x="-0.9" y="0.9" width="2362" height="2362"></rect>
+                             <g id="_1870221698896">
+                              <path class="fil1" d="M1938.61 2361.24l-154.93 0 0 -1319.94c0,-58.44 -47.66,-106.1 -106.1,-106.1 -67.48,0 -134.96,0 -202.44,0 -58.43,0 -106.09,47.66 -106.09,106.1l0 914.37c0,23.37 -19.07,42.44 -42.44,42.44l-11.46 0c-23.38,0 -42.44,-19.07 -42.44,-42.44l0 -914.37c0,-58.44 -47.67,-106.1 -106.1,-106.1 -67.48,0 -134.96,0 -202.44,0 -58.44,0 -106.1,47.66 -106.1,106.1l0 914.37c0,23.37 -19.06,42.44 -42.44,42.44l-11.46 0c-23.37,0 -42.44,-19.07 -42.44,-42.44l0 -605.62c0,-23.37 -19.06,-42.44 -42.44,-42.44l-74.27 0c-23.37,0 -42.43,19.07 -42.43,42.44l0 701.1c0,58.44 47.66,106.1 106.09,106.1 67.48,0 134.96,0 202.44,0 58.44,0 106.1,-47.66 106.1,-106.1l0 -914.36c0,-23.38 19.06,-42.44 42.44,-42.44l11.46 0c23.38,0 42.44,19.06 42.44,42.44l0 914.36c0,58.44 47.66,106.1 106.1,106.1 67.48,0 134.96,0 202.44,0 58.43,0 106.09,-47.66 106.09,-106.1l0 -914.36c0,-23.38 19.07,-42.44 42.44,-42.44l11.47 0c23.37,0 42.44,19.06 42.44,42.44l0 1224.45 -1195.46 0c-58.43,0 -106.09,-47.66 -106.09,-106.1l0 -896.99 -204.99 0c-48.42,0 -89.8,-27.26 -108.91,-71.76 -19.11,-44.5 -10.39,-93.28 22.96,-128.39l1062.1 -1118.53c23.22,-24.45 52.24,-36.91 85.96,-36.91 33.71,0 62.73,12.46 85.95,36.91l1062.11 1118.53c33.34,35.11 42.06,83.89 22.95,128.39 -19.1,44.5 -60.48,71.76 -108.91,71.76l-197.5 0 0 896.99c0,58.44 -47.66,106.1 -106.1,106.1z"></path>
+                             </g>
+                            </g>
+                           </svg>
+                    </div>
+                    <div class="title">İstilik enerjisi</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="homeCategories">
+        <div class="container homeCategoriesContainer">
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">Elanlar</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category1.jpg');"></div>
+                        <div class="text">Agentliyin aktiv elanları ilə buradan tanış ola bilərsiniz</div>
+                    </div>
+                </a>
+            </div>
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">Texniki Şuralar</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category2.jpg');"></div>
+                        <div class="text">Texniki Şuraların məqsədi, fəaliyyəti dairəsi, sahibkarlıq obyektlərinin enerji təchizatı şəbəkəsinə qoşulma haqqı kimi məsələlər bu bölmədə öz əksini tapıb</div>
+                    </div>
+                </a>
+            </div>
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">Qoşulma Kalkulyatoru</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category3.jpg');"></div>
+                        <div class="text">Əhali və qeyri-əhali istehlakçılarının elektrik enerjisi şəbəkəsinə qoşulmalarına görə qoşulma haqqı nə qədərdir? Kalkulyatora buradan keçid edin</div>
+                    </div>
+                </a>
+            </div>
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">E-Kitabxana</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category4.jpg');"></div>
+                        <div class="text">Energetika sahəsinə aid terminologiya, infoqrafik məlumatlar, yerli və beynəlxalq qurumların bu sahəyə aid hesabatları ilə buradan tanış ola bilərsiniz</div>
+                    </div>
+                </a>
+            </div>
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">Vakansiya</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category5.jpg');"></div>
+                        <div class="text">
+                            Agentliyin aktiv vakansiyaları barədə məlumatı buradan əldə edə bilərsiniz</div>
+                    </div>
+                </a>
+            </div>
+            <div class="homeCategoriesItem">
+                <a href="#" class="categoryItem">
+                    <div class="title">Qəbul Günləri</div>
+                    <div class="infoBlock">
+                        <div class="thumb" style="background-image: url('img/category6.jpg');"></div>
+                        <div class="text">AERA-nın rəhbər şəxslərinin qəbuluna yazılmaq istəyirsiniz? Vətəndaşların qəbulu qrafiki ilə tanış olaraq öncədən qəbula yazıla bilərsiniz</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="homeNews">
+        <div class="container">
+            <div class="homeNewsContainer">
+                <div class="lastMedia">
+                    <div class="blockHead">
+                        <div class="title">Şəkillər</div>
+                        <div class="toolkit"><a href="#">Bütün şəkillər <i class="fas fa-chevron-right"></i></a></div>
+                    </div>
+                    <div class="lastMediaCont">
+                        <div class="mediaCarousel">
+                            <div class="owl-carousel carousel2">
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel1.jpg" alt="">
+                                    </div>
+                                    <div class="title">AERA-nın əməkdaşları Vyanada keçirilən regional konfransda iştirak ediblər</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="/img/carousel2.jpg" alt="">
+                                    </div>
+                                    <div class="title">AERA-nın əməkdaşlarına “MDB-nin əməkdar energetiki” medalları təqdim olunub</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="/img/carousel3.jpg" alt="">
+                                    </div>
+                                    <div class="title">Azərbaycan və Türkiyənin enerji tənzimləyiciləri enerji bazarlarında rəqəmsallaşma və hidrogeni...</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel4.jpg" alt="">
+                                    </div>
+                                    <div class="title">AERA xarici enerji tənzimləyici qurumlarla əməkdaşlıq əlaqələrini genişləndirir</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel5.jpg" alt="">
+                                    </div>
+                                    <div class="title">Azərbaycanın enerji tənzimləyici qurumu və Asiya İnkişaf Bankı arasında görüş keçirilib</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel6.jpg" alt="">
+                                    </div>
+                                    <div class="title">Türkiyənin enerji tənzimləmə qurumu elektrik enerjisi və təbii qazın paylanmasında tədqiqat, in...</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel7.jpg" alt="">
+                                    </div>
+                                    <div class="title">Ulu Öndər Heydər Əliyevin anadan olmasının 100-cü ildönümünə həsr olunmuş tədbir keçirilib</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel8.png" alt="">
+                                    </div>
+                                    <div class="title">AERA-nın nümayəndəsi I Beynəlxalq Enerji Konqresində çıxış edib</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel9.jpg" alt="">
+                                    </div>
+                                    <div class="title">Elektrik mühərrikli avtomobillər üçün enerji doldurma xidmətinin tənzimlənməsi ilə bağlı Türkiy...</div>
+                                </a>
+                                <a href="#" class="mediaItem">
+                                    <div class="thumb">
+                                        <img src="img/carousel10.jpg" alt="">
+                                    </div>
+                                    <div class="title"> AERA və AYİB-nin nümayəndələri arasında növbəti görüş keçirilib</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="homeLastNews">
+                    <div class="blockHead">
+                        <div class="title">Xəbərlər </div>
+                        <div class="toolkit"><a href="https://regulator.gov.az/az/news">Bütün xəbərlər <i class="fas fa-chevron-right"></i></a></div>
+                    </div>
+                    <div class="homeLastNewsCont">
+                        <div class="newsItem">
+                            <div class="date">
+                                <span class="day">22</span>
+                                <span class="month">06-2023</span>
+                            </div>
+                            <div class="title">
+                                <a href="#">AERA-nın əməkdaşları Vyanada keçirilən regional konfransda iştirak ediblər</a>
+                            </div>
+                        </div>
+                        <div class="newsItem">
+                            <div class="date">
+                                <span class="day">14</span>
+                                <span class="month">06-2023</span>
+                            </div>
+                            <div class="title">
+                                <a href="#">AERA-nın əməkdaşlarına “MDB-nin əməkdar energetiki” medalları təqdim olunub</a>
+                            </div>
+                        </div>
+                        <div class="newsItem">
+                            <div class="date">
+                                <span class="day">14</span>
+                                <span class="month">06-2023</span>
+                            </div>
+                            <div class="title">
+                                <a href="#">Azərbaycan və Türkiyənin enerji tənzimləyiciləri enerji bazarlarında rəqəmsallaşma və hidrogenin rolu ilə bağlı müzakirə aparıb</a>
+                            </div>
+                        </div>
+                        <div class="newsItem">
+                            <div class="date">
+                                <span class="day">01</span>
+                                <span class="month">06-2023</span>
+                            </div>
+                            <div class="title">
+                                <a href="#">AERA xarici enerji tənzimləyici qurumlarla əməkdaşlıq əlaqələrini genişləndirir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerBlock" id="contactUs">
+        <div class="container">
+            <div class="cuFlex">
+                <div class="homeMapCont">
+                    <div class="homeMap"><img src="./img/azerbaijan-map.png" alt=""></div>
+                </div>
+                <div class="homeContact">
+                    <div class="contactContainer">
+                        <form action="#" class="needs-validation" novalidate id="contactUsForm">
+                            <div>
+                                <div class="col-md-12">
+                                    <div class="blockHead">
+                                        <div class="title">Onlayn müraciət</div>
+                                    </div>
+                                </div>  
+                                <div class="col-md-5 position-relative">
+                                    <label for="validationCustom01" class="form-label">Tam adınız...</label>
+                                    <input type="text" class="form-control form-control-lg" name="fullname" value="" pattern=".{10,200}" maxlength="200" required>
+                                    <div class="invalid-feedback">Yalnış ad. Minimum 10 simvol olmalıdır.</div>
+                                </div>  
+                                <div class="col-md-7 position-relative">
+                                    <label for="validationCustom01" class="form-label">Mobil Nömrə</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" style="font-size: 1.25rem;">+994</span>
+                                        <select class="form-select form-select-lg dont-validate" name="operator" style="max-width: 80px;"  required aria-label="select example">
+                                            <option value="50" >50</option>
+                                            <option value="51" >51</option>
+                                            <option value="55" >55</option>
+                                            <option value="99" >99</option>
+                                            <option value="70" >70</option>
+                                            <option value="77" >77</option>
+                                        </select>
+                                        <input type="text" class="form-control form-control-lg" pattern="[0-9]{7}" maxlength="7" style="border-top-right-radius: 5 !important;border-bottom-right-radius: 5 !important;" id="mobile_phone" name="mobile_phone" value="" required>
+                                        <div class="invalid-feedback">Yalnış Mobil Nömrə. Nömrə 7 rəqəm olmalıdır</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationCustom01" class="form-label">Region Adı</label>
+                                    <select class="form-select form-select-lg " required  id="region" name="region" aria-label="select example">
+                                        <option value="">Seçin</option>
+                                                                <option value="Baş ofis" >Baş ofis</option>
+                                                                <option value="Bakı filialı" >Bakı filialı</option>
+                                                                <option value="Sumqayıt filialı" >Sumqayıt filialı</option>
+                                                                <option value="Xaçmaz filialı" >Xaçmaz filialı</option>
+                                                                <option value="Gəncə filialı" >Gəncə filialı</option>
+                                                                <option value="Mingəçevir filialı" >Mingəçevir filialı</option>
+                                                                <option value="Kürdəmir filialı" >Kürdəmir filialı</option>
+                                                                <option value="İmişli filialı" >İmişli filialı</option>
+                                                                <option value="Şəki filialı" >Şəki filialı</option>
+                                                                <option value="Şirvan filialı" >Şirvan filialı</option>
+                                                                <option value="Tovuz filialı" >Tovuz filialı</option>
+                                                                <option value="Lənkəran filialı" >Lənkəran filialı</option>
+                                                        </select>
+                                    <div class="invalid-feedback">Regionu seçin</div>
+                                </div>
+                                <div class="col-md-4 position-relative">
+                                    <label for="validationCustom01" class="form-label">E-Poçt Adresiniz</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email" value="" maxlength="50" placeholder="mail@example.az" required>
+                                    <div class="invalid-feedback">Yalnış E-Poçt Adresiniz</div>
+                                </div>
+                                <div class="col-md-4 position-relative">
+                                    <label for="validationCustom01" class="form-label">Müraciətin növü</label>
+                                    <select class="form-select form-select-lg" required id="type" name="type" aria-label="select example">
+                                        <option value="">Seçin</option>
+                                        <option value="Kömək" >Kömək</option>
+                                        <option value="Təklif və ya irad" >Təklif və ya irad</option>
+                                        <option value="Digər" >Digər</option>
+                                    </select>
+                                    <div class="invalid-feedback">Müraciətin növü seçin</div>
+                                </div>
+                                <div class="col-md-12 position-relative">
+                                    <label for="validationTextarea" class="form-label">Mətn</label>
+                                    <textarea class="form-control form-control-lg" rows="4" name="body" minlength="10" maxlength="1000" required placeholder="Mətni bura yazın (minimum 10 maksimum 1000 simvol)"></textarea>
+                                    <div class="invalid-feedback">Mətn minimum 10 maksimum 1000 simvol olmalıdır</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6LdZ9pAeAAAAAOcOIXatkDFyKrnQzQ1-7-KvI0Wk" data-callback="correctCaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdZ9pAeAAAAAOcOIXatkDFyKrnQzQ1-7-KvI0Wk&amp;co=aHR0cHM6Ly9yZWd1bGF0b3IuZ292LmF6OjQ0Mw..&amp;hl=en&amp;v=IqA9DpBOUJevxkykws9RiIBs&amp;size=normal&amp;cb=tu9c3g2tgpi4" width="304" height="78" role="presentation" name="a-w030mpac2az4" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn blue fullwidth big" id="sendButtonContact" style="margin:0px" name="submit" type="submit"><span>Göndər</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="footerLinkCont">
+                    <div class="footerBlock mobileHide">
+                        <a class="mainService">Faydalı linklər </a>
+                        <ul>
+                            <li><a target="_blank" href="https://president.az/">Azərbaycan Respublikasının Prezidenti</a></li>
+                            <li><a target="_blank" href="https://mehriban-aliyeva.az/">Birinci Vitse-Prezident</a></li>
+                            <li><a target="_blank" href="https://nk.gov.az/">Nazirlər Kabineti</a></li>
+                            <li><a target="_blank" href="https://www.meclis.gov.az/index.php?lang=az">Milli Məclis</a></li>
+                            <li><a target="_blank" href="https://heydar-aliyev-foundation.org/az">Heydər Əliyev Fondu</a></li>
+                            <li><a target="_blank" href="https://minenergy.gov.az/az/">Energetika Nazirliyi</a></li>
+                            <li><a target="_blank" href="https://www.economy.gov.az/">İqtisadiyyat Nazirliyi</a></li>
+                            <li><a target="_blank" href="http://www.tariffcouncil.gov.az/?/az">Tarif (qiymət) Şurası</a></li>
+                        </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Qarabağ </a>
+                            <ul>
+                                <li><a target="_blank" href="https://static.president.az/media/W1siZiIsIjIwMjEvMTEvMDEvNXVscGdsaGlnc192ZXRlbl9tdWhhcmliZXNpX2F6LnBkZiJdXQ?sha=ae8af020d2fff3a9">Vətən müharibəsi</a></li>
+                                <li><a target="_blank" href="https://qdf.gov.az/">Qarabağ Dirçəliş Fondu</a></li>
+                                <li><a target="_blank" href="https://yashat.gov.az/">"YAŞAT" Fondu</a></li>
+                                <li><a target="_blank" href="https://karabakh.center/az">Qarabağ Mərkəzi</a></li>
+                                <li><a target="_blank" href="https://www.virtualkarabakh.az/az.html">Virtual Qarabağ</a></li>
+                                <li><a target="_blank" href="https://justiceforkhojaly.org/az">Xocalıya ədalət</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Tərəfdaşlar </a>
+                            <ul>
+                                <li><a target="_blank" href="https://erranet.org/">Enerji Tənzimləyiciləri Regional Assosiasiyası</a></li>
+                                <li><a target="_blank" href="https://energy-community.org/">Enerji Birliyi</a></li>
+                                <li><a target="_blank" href="https://www.ceer.eu/web/portal/welcome">Avropa Enerji Tənzimləyiciləri Şurası</a></li>
+                                <li><a target="_blank" href="https://www.ebrd.com/home">Avropa Yenidənqurma və İnkişaf Bankı</a></li>
+                                <li><a target="_blank" href="https://www.adb.org/">Asiya İnkişaf Bankı</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Məlumat </a>
+                            <ul>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/saytin-elcatanligi/saytin-elcatanligi">Saytın əlçatanlığı</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/konfidensialliq/konfidensialliq">Konfidensiallıq</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/muellif-huquqlari/muellif-huquqlari">Müəllif hüquqları</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/e-kitabxana">E-Kitabxana</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/sual-cavab">Sual-cavab</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/kecidler/sayt-xeritesi">Saytın xəritəsi</a></li>
+                            </ul>
+                        </div>
+                    
+    
+                    <div class="footerBlock footerContactBlock">
+                        
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">Baş ofis</div>
+                                <div class="info">Bakı şəhəri, Heydər Əliyev prospekti 152,<br> "Çinar Plaza" Biznes Mərkəzi, AZ1029</div>
+                            </div>
+                        </div>
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">Telefon</div>
+                                <div class="info">(+994 12) 598-16-53/54/55</div>
+                            </div>
+                        </div>
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">E-mail</div>
+                                <div class="info"><a href="mailto:office@regulator.gov.az">office@regulator.gov.az</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="footerBottom">
+                <div class="left">
+                    <p>Bizi sosial şəbəkələrdə izləyin</p>
+                    <div class="sochialList">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/aeraregulator"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCiEo0dpI9xsYxUuWcrZ2GAQ/videos"><i class="fab fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/aeraregulator"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/aeraregulator"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/aera.gov.az/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="btn btnWhite withIcon" style="margin-left: 20px; background: transparent;">
+                        <span class="title">Çağrı Mərkəzi : <strong>974</strong></span>
+                        <span class="btnIcon fas fa-phone"></span>
+                    </div>
+    
+                </div>
+                <div class="right">
+                    <p><i class="fas fa-copyright"></i>AERA 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scrollToTopBtn showBtn "><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="homePage.js"></script>
+</body>
+</html>
