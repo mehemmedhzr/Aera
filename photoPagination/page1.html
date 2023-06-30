@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../homePageStyle.css">
+    <link rel="stylesheet" href="../aeraMeeting.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="./gallery-gridder/style.css">
+    <link rel="stylesheet" href="./gallery-gridder/jquery.gridder.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <script src="./gallery-gridder/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="headerTop container">
+            <div class="headerLeft">
+                <div class="logo">
+                    <a href="../homePage.html">
+                        <img src="https://regulator.gov.az/uploads/logonew.svg" alt="">
+                    </a>
+                </div>
+                <div class="headtitle">Enerji Məsələlərini Tənzimləmə Agentliyi</div>
+            </div>
+            <div class="headerRight">
+                <div class="topUp">
+                    <div class="btn socialList">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/aeraregulator"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCiEo0dpI9xsYxUuWcrZ2GAQ/videos"><i class="fab fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/aeraregulator"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/aeraregulator"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/aera.gov.az/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn contactCenter">
+                        <img src="../img/telephone icon.png" alt="">
+                        <span class="title">Çağrı Mərkəzi : <strong>974</strong></span>
+                    </div>
+                    <div class="btn langSet">
+                        <i class='fas fa-globe-americas globeIcon' style='font-size:20px;color:#3688d4'></i>
+                        <span class="title">AZ</span>
+                        <div class="dropDown">
+                            <ul>
+                                <li>EN</li>
+                                <li>AZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="topBottom">
+                    <a href="#" class="btn">
+                        <span>E-xidmətlər</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom container">
+            <div class="mainMenu">
+                <ul>
+                    <li class="dropdown dropdown-7">
+                        <a href="../homePage.html"><span>ANA SƏHİFƏ</span></a>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            AGENTLİK
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Haqqımızda</a></li>
+                            <li class="dropdown_item-2"><a href="#">Agentliyin Nizamnaməsi</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Rəhbərlik
+                                    <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">İdarə Heyətinin sədri</a></li>
+                                    <li class="dropdown_item-2"><a href="#">İdarə Heyətinin sədr müavinləri</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Təşkilati struktur</a></li>
+                            <li class="dropdown_item-5"><a href="#">Beynəlxalq əməkdaşlıq</a></li>
+                            <li class="dropdown_item-6"><a href="#">Hesabatlılıq</a></li>
+                            <li class="dropdown_item-7"><a href="#">Korrupsiyaya qarşı mübarizə</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            HÜQUQİ AKTLAR
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Qanunlar</a></li>
+                            <li class="dropdown_item-2"><a href="#">Azərbaycan Respublikası Prezidentinin fərman və sərəncamları</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Azərbaycan Respublikası Nazirlər Kabinetinin qərar və sərəncamları
+                                </a>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Azərbaycan Respublikası Energetika Nazirliyinin aktları</a></li>
+                            <li class="dropdown_item-5"><a href="#">Agentliyin şöbələrinin və departamentinin əsasnamələri</a></li>
+                            <li class="dropdown_item-6"><a href="#">Digər hüquqi sənədlər</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            FƏALİYYƏT İSTİQAMƏTLƏRİ
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-1"><a href="#">Nəzarət məsələləri</a></li>
+                            <li class="dropdown_item-2"><a href="#">Qanunvericilik təşəbbüsləri</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar"><a href="#">İstehlakçıların hüquqlarının qorunması</a></li>
+                            <li class="dropdown_item-4"><a href="#">Mübahisələrin həlli və şikayətlərə baxılması</a></li>
+                            <li class="dropdown_item-5"><a href="#">Lisenziyalar və icazələr</a></li>
+                            <li class="dropdown_item-6"><a href="#">Tarif (qiymət) tənzimlənməsində iştirak</a></li>
+                            <li class="dropdown_item-4"><a href="#">Xidmətlərin keyfiyyətinə nəzarət </a></li>
+                            <li class="dropdown_item-5"><a href="#">İcrası məcburi olan göstərişlər</a></li>
+                            <li class="dropdown_item-6"><a href="#">İnvestisiya mühiti</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            İSTEHLAKÇILAR
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Əhali
+                                    <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Elektrik, qaz və istilik şəbəkəsinə qoşulma</a></li>
+                                </ul>
+                            </li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Qeyri əhali
+                                    <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Qeyri-əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Elektrik və qaz şəbəkəsinə qoşulma</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Texniki Şuralar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-2"><a href="#">Elektrik enerjisi və qaz təchizatı üzrə müqavilə şərtləri</a></li>
+                            <li class="dropdown_item-4"><a href="#">Elektrik, qaz və istilik təchizatının dayandırılmasının şərtləri</a></li>
+                            <li class="dropdown_item-5"><a href="#">İstehlakçı məmnuniyyəti</a></li>
+                            <li class="dropdown_item-6"><a href="#">Elektrik və qaz təchizatı şəbəkələrində mühafizə zonaları</a></li>
+                            <li class="dropdown_item-7"><a href="#">Enerji təchizatçısına müraciət et</a></li>
+                            <li class="dropdown_item-7"><a href="#">Tariflər (qiymətlər)</a></li>
+                            <li class="dropdown_item-7"><a href="#">Borcunu öyrən</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            MEDİA
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Xəbərlər
+                                    <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Press-relizlər</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Statistik məlumatlar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-2"><a href="#">Karyera bloqu</a></li>
+                            <li class="dropdown_item-4"><a href="#">Şəkillər</a></li>
+                            <li class="dropdown_item-5"><a href="#">Videolar</a></li>
+                        </ul>
+                    </li>
+                    <li class="hasChildren dropdown dropdown-7">
+                        <a href="#">
+                            ƏLAQƏ
+                            <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                        </a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-7">
+                            <li class="dropdown_item-2"><a href="#">Filiallar</a></li>
+                            <li class="hasChildren dropdown dropdown_item-3 childrenPar">
+                                <a href="#">Sual-Cavab
+                                    <div class="arrowDown"><img src="../img/down-arrow.png" alt=""></div>
+                                </a>
+                                <ul class="multichildren dropdown_menu--animated dropdown_menu-7">
+                                    <li class="dropdown_item-1"><a href="#">Elektrik enerjisi</a></li>
+                                    <li class="dropdown_item-2"><a href="#">Təbii qaz təchizatı</a></li>
+                                    <li class="dropdown_item-2"><a href="#">İstilik enerjisi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown_item-4"><a href="#">Bizimlə əlaqə</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <button class="searchButton">
+                    <img src="../img/search.png" alt="">
+                    <span>Axtarış...</span>
+                </button>
+            </div>
+        </div>
+        <div class="headerMobile showMenu">
+            <div class="headerMob">
+                <a href="../homePage.html" class="logoMob">
+                    <img src="https://regulator.gov.az/uploads/logonew.svg" alt="">
+                </a>
+                <span class="headtitle">Enerji Məsələlərini Tənzimləmə Agentliyi</span>
+                <div class="rightSide">
+                    <div class="langSet langSetMob">
+                        <span class="title">AZ</span>
+                        <div class="dropDownMob">
+                            <ul>
+                                <li>EN</li>
+                                <li>AZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="searchButtonMob">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" id="openMenu">
+                        <span class="fas fa-bars"></span>
+                    </a>
+                    <div id="closeMenu">
+                        <span class="fas fa-times"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileLinks">
+                <div class="mainMenuMobile">
+                    <ul class="parentUl">
+                        <li><a href="../homePage.html" class="listA"><span>ANA SƏHİFƏ</span></a></li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">AGENTLİK</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        AGENTLİK<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Haqqımızda</a></li>
+                                <li><a href="#" class="listB ">Agentliyin Nizamnaməsi</a></li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Rəhbərlik</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Rəhbərlik<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">İdarə Heyətinin sədri</a></li>
+                                        <li><a href="#">İdarə Heyətinin sədr müavinləri</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB">Təşkilati struktur</a></li>
+                                <li><a href="#" class="listB">Beynəlxalq əməkdaşlıq</a></li>
+                                <li><a href="#" class="listB">Hesabatlılıq</a></li>
+                                <li><a href="#" class="listB">Korrupsiyaya qarşı mübarizə</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">HÜQUQİ AKTLAR</a>
+                            <ul class="submenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        HÜQUQİ AKTLAR<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Qanunlar</a></li>
+                                <li><a href="#" class="listB ">Azərbaycan Respublikası Prezidentinin fərman və sərəncamları</a></li>
+                                <li><a href="#" class="listB">Azərbaycan Respublikası Nazirlər Kabinetinin qərar və sərəncamları</a></li>
+                                <li><a href="#" class="listB">Azərbaycan Respublikası Energetika Nazirliyinin aktları</a></li>
+                                <li><a href="#" class="listB">Agentliyin şöbələrinin və departamentinin əsasnamələri</a></li>
+                                <li><a href="#" class="listB">Digər hüquqi sənədlər</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">FƏALİYYƏT İSTİQAMƏTLƏRİ</a>
+                            <ul class="submenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        FƏALİYYƏT İSTİQAMƏTLƏRİ<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Nəzarət məsələləri</a></li>
+                                <li><a href="#" class="listB ">Qanunvericilik təşəbbüsləri</a></li>
+                                <li><a href="#" class="listB">İstehlakçıların hüquqlarının qorunması</a></li>
+                                <li><a href="#" class="listB">Mübahisələrin həlli və şikayətlərə baxılması</a></li>
+                                <li><a href="#" class="listB">Lisenziyalar və icazələr</a></li>
+                                <li><a href="#" class="listB">Tarif (qiymət) tənzimlənməsində iştirak</a></li>
+                                <li><a href="#" class="listB">Xidmətlərin keyfiyyətinə nəzarət </a></li>
+                                <li><a href="#" class="listB">İcrası məcburi olan göstərişlər</a></li>
+                                <li><a href="#" class="listB">İnvestisiya mühiti</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">İSTEHLAKÇILAR</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        İSTEHLAKÇILAR<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Əhali</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Əhali<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                        <li><a href="#">Elektrik, qaz və istilik şəbəkəsinə qoşulma</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Qeyri əhali</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Qeyri əhali<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Qeyri-əhali qrupuna aid istehlakçılar haqqında məlumat</a></li>
+                                        <li><a href="#">Elektrik və qaz şəbəkəsinə qoşulma</a></li>
+                                        <li><a href="#">Texniki Şuralar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB">Elektrik enerjisi və qaz təchizatı üzrə müqavilə şərtləri</a></li>
+                                <li><a href="#" class="listB ">Elektrik, qaz və istilik təchizatının dayandırılmasının şərtləri</a></li>
+                                <li><a href="#" class="listB">İstehlakçı məmnuniyyəti</a></li>
+                                <li><a href="#" class="listB">Elektrik və qaz təchizatı şəbəkələrində mühafizə zonaları</a></li>
+                                <li><a href="#" class="listB">Enerji təchizatçısına müraciət et</a></li>
+                                <li><a href="#" class="listB">Tariflər (qiymətlər)</a></li>
+                                <li><a href="#" class="listB">Borcunu öyrən </a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">MEDİA</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        MEDİA<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Xəbərlər</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Xəbərlər<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Press-relizlər</a></li>
+                                        <li><a href="#">Statistik məlumatlar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB"> Karyera bloqu</a></li>
+                                <li><a href="./page1.html" class="listB ">Şəkillər</a></li>
+                                <li><a href="#" class="listB">Videolar</a></li>
+                            </ul>
+                        </li>
+                        <li class="hasChildMob">
+                            <a href="#" class="listA">ƏLAQƏ</a>
+                            <ul class="submenu borderSubmenu">
+                                <div class="listB">
+                                    <button class="goBackMenu listB">
+                                        <span class="fas fa-chevron-left"></span>
+                                        Geriyə
+                                    </button>
+                                    <a href="#" class="submenuTitle listB">
+                                        ƏLAQƏ<span class="fas fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <li><a href="#" class="listB">Filiallar</a></li>
+                                <li class="hasChildMobSub">
+                                    <a href="#" class="listB">Sual-Cavab</a>
+                                    <ul class="submenu">
+                                        <div>
+                                            <button class="goBackMenuSub">
+                                                <span class="fas fa-chevron-left"></span>
+                                                Geriyə
+                                            </button>
+                                            <a href="#" class="submenuTitle">
+                                                Sual-Cavab<span class="fas fa-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                        <li><a href="#">Elektrik enerjisi </a></li>
+                                        <li><a href="#">Təbii qaz təchizatı</a></li>
+                                        <li><a href="#">İstilik enerjisi </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="listB ">Bizimlə əlaqə</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="searchModal">
+            <div class="modalBox">
+                <div class="modalTop">
+                    <img src="../img/close.png" alt="">
+                </div>
+                <div class="modalBottom">
+                    <form action="">
+                        <div class="inputGroup">
+                            <input type="text" placeholder="Axtarış üçün yazın">
+                            <button type="submit">Axtarış</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="coverImage mobileShow" style="background-image: url('../img/gallery-cover.jpg')">
+        <div class="container">
+            <div class="info">
+                <div class="title">Şəkillər</div>
+                <div class="description"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="coverImage mobileHide" style="background-image: url('https://regulator.gov.az/uploads/Cover%20photos/Fotoqalereya3.jpg')">
+        <div class="container">
+            <div class="info">
+                <div class="title">Şəkillər</div>
+                <div class="description"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleryList">
+        <div class="gridder clearfix">
+            <div class="gridder-list " id="target1" data-griddercontent="#id1">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo1.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>22-06-2023 16:31</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-nın əməkdaşları Vyanada keçirilən regional konfransda iştirak ediblər</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target2" data-griddercontent="#id2">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo2.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>14-06-2023 19:35</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-nın əməkdaşlarına “MDB-nin əməkdar energetiki” medalları təqdim olunub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target3" data-griddercontent="#id3">
+                    <div class="galleryItem">
+                        <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                        <div class="thumb">
+                            <img src="../img/gallery/page1-photo3.jpg" alt="">
+                        </div>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>14-06-2023 18:53</span>
+                        </div>
+                        <div class="title">
+                            <a href="#">Azərbaycan və Türkiyənin enerji tənzimləyiciləri enerji bazarlarında rəqəmsallaşma və hidrogenin rolu ilə bağlı müzakirə aparıb</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="gridder-list " id="target4" data-griddercontent="#id4">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo4.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>01-06-2023 17:25</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA xarici enerji tənzimləyici qurumlarla əməkdaşlıq əlaqələrini genişləndirir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target5" data-griddercontent="#id5">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo5.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>31-05-2023 17:16</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Azərbaycanın enerji tənzimləyici qurumu və Asiya İnkişaf Bankı arasında görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target6" data-griddercontent="#id6">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo6.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>24-05-2023 18:12</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Türkiyənin enerji tənzimləmə qurumu elektrik enerjisi və təbii qazın paylanmasında tədqiqat, inkişaf və innovasiyalarla bağlı təcrübəsini AERA ilə bölüşüb</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target7" data-griddercontent="#id7">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo7.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>08-05-2023 16:19</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Ulu Öndər Heydər Əliyevin anadan olmasının 100-cü ildönümünə həsr olunmuş tədbir keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target8" data-griddercontent="#id8">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo8.png" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>17-03-2023 18:49</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-nın nümayəndəsi I Beynəlxalq Enerji Konqresində çıxış edib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target9" data-griddercontent="#id9">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo9.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>16-03-2023 16:35</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Elektrik mühərrikli avtomobillər üçün enerji doldurma xidmətinin tənzimlənməsi ilə bağlı Türkiyə təcrübəsi AERA ilə bölüşülüb</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target10" data-griddercontent="#id10">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo10.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>16-03-2023 14:37</span>
+                    </div>
+                    <div class="title">
+                        <a href="#"> AERA və AYİB-nin nümayəndələri arasında növbəti görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target11" data-griddercontent="#id11">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo11.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>14-03-2023 12:40</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-nın nümayəndəsi “EU4Energy” proqramının II mərhələsi çərçivəsində Brüsseldə keçirilən regional təlimdə iştirak edib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target12" data-griddercontent="#id12">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo12.jpeg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>13-03-2023 09:57</span>
+                    </div>
+                    <div class="title">
+                        <a href="#"> Energetika Nazirliyinin və AERA-nın əməkdaşlarından ibarət "Ağdam" komandası "Səmərəli həll" nominasiyası üzrə mükafata layiq görülüb</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target13" data-griddercontent="#id13">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo13.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>22-02-2023 16:00</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA və Beynəlxalq Maliyyə Korporasiyası arasında görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target14" data-griddercontent="#id14">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo14.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>20-02-2023 18:57</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Budapeştdə Azərbaycan və Macarıstanın enerji tənzimləyici qurumlarının birgə həyata keçirdiyi tədbirlər müzakirə edilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target15" data-griddercontent="#id15">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo15.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>13-02-2023 18:38</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-da “EU4Energy” proqramının II mərhələsi üzrə fəaliyyət planı müzakirə edilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target16" data-griddercontent="#id16">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo16.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>10-02-2023 15:17</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">“Elektrik enerjisi bazarının liberallaşdırılması üçün keçid mexanizmlərinin yaradılmasına dəstək” layihəsi çərçivəsində növbəti seminar keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target17" data-griddercontent="#id17">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo17.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>04-02-2023 13:51</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">AERA-nın İdarə Heyətinin sədri Əbu-Dabi Enerji Şirkətinin nümayəndələrini qəbul edib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target18" data-griddercontent="#id18">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo18.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>02-02-2023 19:18</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Enerji Məsələlərini Tənzimləmə Agentliyi və Avropa Yenidənqurma və İnkişaf Bankının nümayəndələri arasında növbəti görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target19" data-griddercontent="#id19">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo19.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>11-01-2023 10:16</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">“Bakı KOB evi”ndə AERA tərəfindən xidmətlərin göstərilməsinə start verilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target20" data-griddercontent="#id20">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo20.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>26-12-2022 12:54</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Bakı Mühəndislik Universitetinin tələbələri ilə onlayn görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridder-list " id="target21" data-griddercontent="#id21">
+                <div class="galleryItem">
+                    <a href="#" class="overlay"><span class="fas fa-eye"></span></a>
+                    <div class="thumb">
+                        <img src="../img/gallery/page1-photo21.jpg" alt="">
+                    </div>
+                    <div class="date">
+                        <span class="icons far fa-clock"></span>
+                        <span>22-12-2022 12:00</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">Azərbaycan və Türkiyənin enerji tənzimləyici qurumlarının mütəxəssisləri arasında növbəti görüş keçirilib</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="id1" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo1.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-nın əməkdaşları Vyanada keçirilən regional konfransda iştirak ediblər</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>22-06-2023 16:31</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA-nın əməkdaşları Vyanada “EU4Energy” proqramının II mərhələsi çərçivəsində &quot;Avropa İttifaqının şərq qonşuluğunda regional enerji bazarının yaradılması&quot; mövzusunda keçirilən regional konfransda iştirak ediblər.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id2" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo2.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-nın əməkdaşlarına “MDB-nin əməkdar energetiki” medalları təqdim olunub</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>14-06-2023 19:35</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA-nın İdarə Heyətinin sədri Enerji tənzimləmə və monitorinq departamentinin baş mütəxəssisi Fərid Daşdəmirli və aparıcı mütəxəssisi Hüseynqulu İbrahimova “MDB-nin əməkdar energetiki” vəsiqə və medallarını təqdim edib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id3" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo3.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Azərbaycan və Türkiyənin enerji tənzimləyiciləri enerji bazarlarında rəqəmsallaşma və hidrogenin rolu ilə bağlı müzakirə aparıb</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>14-06-2023 18:53</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Enerji bazarlarında rəqəmsallaşma və hidrogenin roluna dair Türkiyə təcrübəsi AERA-nın mütəxəssisləri ilə bölüşülüb. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id4" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo4.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA xarici enerji tənzimləyici qurumlarla əməkdaşlıq əlaqələrini genişləndirir</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>01-06-2023 17:25</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA ilə Çexiyanın Enerji Tənzimləmə Qurumunun (ERO) nümayəndələri arasında görüş keçirilib. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id5" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo5.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Azərbaycanın enerji tənzimləyici qurumu və Asiya İnkişaf Bankı arasında görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>31-05-2023 17:16</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Enerji Məsələlərini Tənzimləmə Agentliyi ilə Asiya İnkişaf Bankının nümayəndələri arasında görüş keçirilib</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id6" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo6.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Türkiyənin enerji tənzimləmə qurumu elektrik enerjisi və təbii qazın paylanmasında tədqiqat, inkişaf və innovasiyalarla bağlı təcrübəsini AERA ilə bölüşüb</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>24-05-2023 18:12</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Türkiyənin Enerji Bazarını Tənzimləmə Qurumu (EPDK) elektrik enerjisi və təbii qazın paylanmasında tədqiqat, inkişaf və innovasiyalarla bağlı təcrübəsini AERA-nın mütəxəssisləri ilə bölüşüb. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id7" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo7.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Ulu Öndər Heydər Əliyevin anadan olmasının 100-cü ildönümünə həsr olunmuş tədbir keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>08-05-2023 16:19</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Energetika Nazirliyi tərəfindən Azərbaycan xalqının ümummilli lideri, dünya şöhrətli siyasətçi, müdrik dövlət xadimi Ulu Öndər Heydər Əliyevin anadan olmasının 100-cü ildönümünə həsr olunmuş tədbir keçirilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id8" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo8.png')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-nın nümayəndəsi I Beynəlxalq Enerji Konqresində çıxış edib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>17-03-2023 18:49</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA-nın Strateji planlaşdırma və innovasiyalar şöbəsinin müdiri Hikmət Həsənov I Beynəlxaq Enerji Konqresi çərçivəsində keçirilən panel və sessiya iclaslarında təqdimatla çıxış edib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id9" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo9.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Elektrik mühərrikli avtomobillər üçün enerji doldurma xidmətinin tənzimlənməsi ilə bağlı Türkiyə təcrübəsi AERA ilə bölüşülüb</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>16-03-2023 16:35</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Azərbaycan-Türkiyə II Enerji Forumunun “Tənzimləmə” İşçi qrupunun 2022-2023-cü illər üzrə Forumlararası Fəaliyyət Planı çərçivəsində Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və Türkiyənin Enerji Bazarını Tənzimləmə Qurumunun (EPDK) mütəxəssisləri arasında növbəti görüş keçirilib. Görüşdə elektrik mühərrikli avtomobillər üçün enerji doldurma xidmətinin tənzimlənməsi ilə bağlı Türkiyə təcrübəsi AERA ilə bölüşülüb.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id10" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo10.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title"> AERA və AYİB-nin nümayəndələri arasında növbəti görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>16-03-2023 14:37</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və Avropa Yenidənqurma və İnkişaf Bankının (AYİB) nümayəndələri arasında növbəti görüş keçirilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id11" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo11.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-nın nümayəndəsi “EU4Energy” proqramının II mərhələsi çərçivəsində Brüsseldə keçirilən regional təlimdə iştirak edib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>14-03-2023 12:40</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA-nın Hüquqi təminat və təhlil şöbəsinin rəhbəri Fariz Şirinov Avropa Enerji Tənzimləyiciləri Şurası (CEER) tərəfindən “EU4Energy” proqramının II mərhələsi çərçivəsində enerji sahəsində rəhbər vəzifəli şəxslər üçün Brüsseldə keçirilən regional təlimdə iştirak edib. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id12" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo12.jpeg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title"> Energetika Nazirliyinin və AERA-nın əməkdaşlarından ibarət "Ağdam" komandası "Səmərəli həll" nominasiyası üzrə mükafata layiq görülüb</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>13-03-2023 09:57</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Energetika Nazirliyinin və AERA-nın əməkdaşlarından ibarət &quot;Ağdam&quot; komandası &quot;Heydər Əliyev İli&quot;nə həsr olunmuş &quot;Çevik 100 il&quot; ideya müsabiqəsində &quot;Səmərəli həll&quot; nominasiyası üzrə mükafata layiq görülüb.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id13" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo13.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA və Beynəlxalq Maliyyə Korporasiyası arasında görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>22-02-2023 16:00</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Görüş zamanı enerji tənzimləmə sahəsində həyata keçirilən tədbirlər, elektrik enerjisinin ixrac imkanları, eləcə də enerji sektorunda, xüsusilə bərpa olunan enerji sahəsində əlverişli investisiya mühiti barədə ətraflı məlumat verilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id14" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo14.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Budapeştdə Azərbaycan və Macarıstanın enerji tənzimləyici qurumlarının birgə həyata keçirdiyi tədbirlər müzakirə edilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>20-02-2023 18:57</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Budapeştdə Azərbaycan Respublikası Hökuməti və Macarıstan Hökuməti arasında keçirilən Enerji üzrə İşçi Qrupunun 3-cü iclasında Azərbaycanın Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və Macarıstanın Enerji və Kommunal xidmətlər üzrə Tənzimləmə Qurumu (MEKH) arasında əməkdaşlıq əlaqələri çərçivəsində həyata keçirilən tədbirlər müzakirə edilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id15" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo15.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-da “EU4Energy” proqramının II mərhələsi üzrə fəaliyyət planı müzakirə edilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>13-02-2023 18:38</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Enerji Məsələlərini Tənzimləmə Agentliyində “EU4Energy” proqramının II mərhələsi – “Şərq tərəfdaşlığı ölkələrində təmiz enerjiyə keçidin təşviqi” çərçivəsində növbəti görüş keçirilib. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id16" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo16.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">“Elektrik enerjisi bazarının liberallaşdırılması üçün keçid mexanizmlərinin yaradılmasına dəstək” layihəsi çərçivəsində növbəti seminar keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>10-02-2023 15:17</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Energetika Nazirliyi ilə Dünya Bankının birgə həyata keçirdiyi “Elektrik enerjisi bazarının liberallaşdırılması üçün keçid mexanizmlərinin yaradılmasına dəstək” layihəsi çərçivəsində növbəti seminar keçirilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id17" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo17.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">AERA-nın İdarə Heyətinin sədri Əbu-Dabi Enerji Şirkətinin nümayəndələrini qəbul edib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>04-02-2023 13:51</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>AERA-nın İdarə Heyətinin sədri Samir Axundov Əbu-Dabi Enerji Şirkətinin (TAQA) ötürülmə və paylama üzrə icraçı direktoru Ömər Abdulla Əlhaşmini və şəbəkə inkişafı və investisiyalar üzrə direktoru Qabriele Manduzionu qəbul edib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id18" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo18.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Enerji Məsələlərini Tənzimləmə Agentliyi və Avropa Yenidənqurma və İnkişaf Bankının nümayəndələri arasında növbəti görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>02-02-2023 19:18</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və Avropa Yenidənqurma və İnkişaf Bankının (EBRD) nümayəndələri arasında növbəti görüş keçirilib. Görüşdə AERA-nın İdarə Heyətinin sədri Samir Axundov, EBRD-nin risk üzrə baş mütəxəssisi Əkrəm Hilmi, eləcə də hər iki qurumun digər nümayəndələri iştirak ediblər.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id19" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo19.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">“Bakı KOB evi”ndə AERA tərəfindən xidmətlərin göstərilməsinə start verilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>11-01-2023 10:16</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>“Bakı KOB evi”ndə (Kiçik və orta biznes evi) Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) tərəfindən xidmətlərin göstərilməsinə start verilib.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id20" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo20.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Bakı Mühəndislik Universitetinin tələbələri ilə onlayn görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>26-12-2022 12:54</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Energetika Nazirliyi, tabeliyindəki Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və nazirlik yanında Bərpa Olunan Enerji Mənbələri Dövlət Agentliyinin (BOEMDA) nümayəndələri ilə Bakı Mühəndislik Universitetinin (BMU) tələbə və müəllim heyəti arasında onlayn görüş keçirilib. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="id21" class="gridder-content">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="albumCont">
+                        <div class="albumCarousel">
+                            <div class="photoItem" style="background-image: url('../img/gallery/page1-photo21.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="albumInfo">
+                        <h2 class="title">Azərbaycan və Türkiyənin enerji tənzimləyici qurumlarının mütəxəssisləri arasında növbəti görüş keçirilib</h2>
+                        <div class="date">
+                            <span class="icons far fa-clock"></span>
+                            <span>22-12-2022 12:00</span>
+                        </div>
+                        <div class="shortstory">
+                            <p>Azərbaycan-Türkiyə II Enerji Forumunun “Tənzimləmə” İşçi qrupunun 2022-2023-cü illər üzrə Forumlararası Fəaliyyət Planı çərçivəsində Enerji Məsələlərini Tənzimləmə Agentliyi (AERA) və Türkiyənin Enerji Bazarını Tənzimləmə Qurumunun (EPDK) mütəxəssisləri arasında növbəti görüş keçirilib</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+                    
+        
+        
+        <div class="paginationWrap">
+            <ul class="paginationList">
+                <li class=" active"><a href="#">1</a></li>
+
+                <li><a  href="page2.html">2</a></li>
+            
+                <li class=" disabled" ><a  href="#">...</a></li>
+            
+                <li ><a href="page5.html">5</a></li>
+            
+                <li ><a href="page2.html">Sonrakı</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="footerLinkCont">
+                    <div class="footerBlock mobileHide">
+                        <a class="mainService">Faydalı linklər </a>
+                        <ul>
+                            <li><a target="_blank" href="https://president.az/">Azərbaycan Respublikasının Prezidenti</a></li>
+                            <li><a target="_blank" href="https://mehriban-aliyeva.az/">Birinci Vitse-Prezident</a></li>
+                            <li><a target="_blank" href="https://nk.gov.az/">Nazirlər Kabineti</a></li>
+                            <li><a target="_blank" href="https://www.meclis.gov.az/index.php?lang=az">Milli Məclis</a></li>
+                            <li><a target="_blank" href="https://heydar-aliyev-foundation.org/az">Heydər Əliyev Fondu</a></li>
+                            <li><a target="_blank" href="https://minenergy.gov.az/az/">Energetika Nazirliyi</a></li>
+                            <li><a target="_blank" href="https://www.economy.gov.az/">İqtisadiyyat Nazirliyi</a></li>
+                            <li><a target="_blank" href="http://www.tariffcouncil.gov.az/?/az">Tarif (qiymət) Şurası</a></li>
+                        </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Qarabağ </a>
+                            <ul>
+                                <li><a target="_blank" href="https://static.president.az/media/W1siZiIsIjIwMjEvMTEvMDEvNXVscGdsaGlnc192ZXRlbl9tdWhhcmliZXNpX2F6LnBkZiJdXQ?sha=ae8af020d2fff3a9">Vətən müharibəsi</a></li>
+                                <li><a target="_blank" href="https://qdf.gov.az/">Qarabağ Dirçəliş Fondu</a></li>
+                                <li><a target="_blank" href="https://yashat.gov.az/">"YAŞAT" Fondu</a></li>
+                                <li><a target="_blank" href="https://karabakh.center/az">Qarabağ Mərkəzi</a></li>
+                                <li><a target="_blank" href="https://www.virtualkarabakh.az/az.html">Virtual Qarabağ</a></li>
+                                <li><a target="_blank" href="https://justiceforkhojaly.org/az">Xocalıya ədalət</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Tərəfdaşlar </a>
+                            <ul>
+                                <li><a target="_blank" href="https://erranet.org/">Enerji Tənzimləyiciləri Regional Assosiasiyası</a></li>
+                                <li><a target="_blank" href="https://energy-community.org/">Enerji Birliyi</a></li>
+                                <li><a target="_blank" href="https://www.ceer.eu/web/portal/welcome">Avropa Enerji Tənzimləyiciləri Şurası</a></li>
+                                <li><a target="_blank" href="https://www.ebrd.com/home">Avropa Yenidənqurma və İnkişaf Bankı</a></li>
+                                <li><a target="_blank" href="https://www.adb.org/">Asiya İnkişaf Bankı</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerBlock mobileHide">
+                            <a class="mainService">Məlumat </a>
+                            <ul>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/saytin-elcatanligi/saytin-elcatanligi">Saytın əlçatanlığı</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/konfidensialliq/konfidensialliq">Konfidensiallıq</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/muellif-huquqlari/muellif-huquqlari">Müəllif hüquqları</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/e-kitabxana">E-Kitabxana</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/sual-cavab">Sual-cavab</a></li>
+                                <li><a target="_blank" href="https://regulator.gov.az/az/kecidler/sayt-xeritesi">Saytın xəritəsi</a></li>
+                            </ul>
+                        </div>
+                    
+    
+                    <div class="footerBlock footerContactBlock">
+                        
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">Baş ofis</div>
+                                <div class="info">Bakı şəhəri, Heydər Əliyev prospekti 152,<br> "Çinar Plaza" Biznes Mərkəzi, AZ1029</div>
+                            </div>
+                        </div>
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">Telefon</div>
+                                <div class="info">(+994 12) 598-16-53/54/55</div>
+                            </div>
+                        </div>
+                        <div class="footerContact">
+                            <div class="text">
+                                <div class="title">E-mail</div>
+                                <div class="info"><a href="mailto:office@regulator.gov.az">office@regulator.gov.az</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="footerBottom">
+                <div class="left">
+                    <p>Bizi sosial şəbəkələrdə izləyin</p>
+                    <div class="sochialList">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/aeraregulator"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCiEo0dpI9xsYxUuWcrZ2GAQ/videos"><i class="fab fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/aeraregulator"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/aeraregulator"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/aera.gov.az/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="btn btnWhite withIcon" style="margin-left: 20px; background: transparent;">
+                        <span class="title">Çağrı Mərkəzi : <strong>974</strong></span>
+                        <span class="btnIcon fas fa-phone"></span>
+                    </div>
+    
+                </div>
+                <div class="right">
+                    <p><i class="fas fa-copyright"></i>AERA 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scrollToTopBtn showBtn"><i class="fas fa-chevron-up"></i></button>
+
+
+    <script src="./gallery-gridder/jquery.gridder.js"></script>
+    <script src="../homePage.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.gridder').gridderExpander({
+                scroll: true,
+                scrollOffset: 30,
+                scrollTo: "panel",
+                animationSpeed: 400,
+                animationEasing: "easeInOutExpo",
+                showNav: true,
+                nextText: "<span></span>",
+                prevText: "<span></span>",
+                closeText: ""
+            });
+            let isFullstory =  false;
+            if(isFullstory){
+                goToByScroll('target');
+                $('#target').trigger("click");
+            }
+        });
+    </script>
+</body>
+</html>

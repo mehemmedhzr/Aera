@@ -13,7 +13,13 @@ body {
     -webkit-tap-highlight-color: transparent;
     font-family: "Arimo", sans-serif;
     overflow-x: hidden;
+    overflow: auto;
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    width: 0; /* Hide the default scrollbar for WebKit */
+  }
 
 a {
     color: #007bff;
@@ -1676,6 +1682,10 @@ textarea {
     .footerBlock.footerContactBlock {
         margin: 0px;
     }   
+
+    header{
+        height: 72px;
+    }
 
 }
 

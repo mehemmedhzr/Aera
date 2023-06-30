@@ -1,0 +1,211 @@
+.fullstory {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+}
+
+.fullstory .leftSide {
+    max-width: 350px;
+    width: 100%;
+    background: #f9f8f8;
+}
+
+.goBack {
+    border-bottom: 1px solid #ccc;
+    color: #207abf;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 100%;
+    align-items: center;
+    font-size: 15px;
+}
+
+.goBack .icons {
+    font-size: 15px;
+    padding: 0px 15px 0px 5px;
+}
+
+.leftBlock h2 {
+    font-size: 25px;
+    color: #6c6c6c;
+    font-weight: 700;
+    padding: 25px 25px 15px 25px;
+    margin: 0px;
+}
+
+.leftBlock ul {
+    padding-left: 30px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.leftBlock li {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #6c6c6c;
+}
+
+.leftSide li a {
+    color: #6c6c6c;
+    font-size: 15px;
+}
+
+ul.sochiallinks {
+    margin: 0px;
+    padding: 0px;
+    background: #ccc;
+    display: flex;
+    list-style: none;
+}
+
+ul.sochiallinks li {
+    float: left;
+    height: 100%;
+    list-style-type: none;
+}
+
+ul.sochiallinks li a.facebook {
+    background: #626262;
+}
+
+ul.sochiallinks li a.twitter {
+    background: #7b7b7b;
+}
+
+ul.sochiallinks li a {
+    text-decoration: none;
+    display: block;
+    height: 45px;
+    transition: all 100ms linear;
+    cursor: pointer;
+}
+
+ul.sochiallinks li a:hover {
+    transition: all 100ms linear;
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 5;
+}
+
+ul.sochiallinks li a.twitter:hover {
+    background: #00c0e7;
+}
+
+ul.sochiallinks li a.facebook:hover {
+    background: #306ead;
+}
+
+ul.sochiallinks li a.google {
+    background: #858585;
+}
+
+ul.sochiallinks li a.google:hover {
+    background: #ff3d2f;
+}
+
+ul.sochiallinks li a.linkedin {
+    background: #626262;
+}
+
+ul.sochiallinks li a.linkedin:hover {
+    background: #0097bd;
+}
+
+ul.sochiallinks li a {
+    background: #949393;
+}
+
+ul.sochiallinks li a.whatsapp:hover {
+    background: #02cf13;
+}
+
+ul.sochiallinks li a.vkontakte {
+    background: #565656;
+}
+
+ul.sochiallinks li a.vkontakte:hover {
+    background: #296790;
+}
+
+ul.sochiallinks li a i {
+    font-size: 20px;
+    line-height: 45px;
+    color: #fff;
+    width: 45px;
+    display: block;
+    text-align: center;
+}
+
+.fullstory .rightSide {
+    padding: 20px 20px;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 600px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.fullstory .rightSide .top {
+    margin-bottom: 25px;
+}
+
+.fullstory .rightSide .top .title {
+    color: #207abf;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.infolist {
+    padding: 30px 0px;
+    font-size: 14px;
+}
+
+.infolist ul {
+    list-style: none;
+}
+
+.infolist .key {
+    width: 200px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.mobileShow {
+    display: none !important;
+}
+
+@media only screen and (10px <= width <= 756px) {
+
+    .fullstory {
+        flex-direction: column;
+        margin: 0px -0.75rem;
+    }
+
+    .fullstory .leftSide {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .mobileHide {
+        display: none !important;
+    }
+
+    .fullstory .rightSide {
+        overflow-x: scroll;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileShow {
+        display: block !important;
+    }
+
+}

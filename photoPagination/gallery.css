@@ -1,0 +1,304 @@
+.coverImage {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-color: #2a79be;
+    /* background-size: 100% auto; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.coverImage .container {
+    height: 100%;
+    display: flex;
+}
+
+.coverImage .info {
+    background-color: rgb(41 121 190 / 74%);
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 5px;
+}
+
+.coverImage .info .title {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.coverImage .info .description {
+    font-size: 20px;
+    padding: 20px 0px;
+    color: #fff;
+    font-family: 'Arimo';
+    max-width: 800px;
+}
+
+.galleryList {
+    padding: 30px 0px;
+}
+
+.galleryItem {
+    position: relative;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.galleryItem .overlay {
+    transition: all 100ms linear;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #207abf;
+    opacity: 0;
+    font-size: 110px;
+    color: #fff;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryItem:hover .overlay {
+    opacity: 0.8;
+    transition: all 100ms linear;
+}
+
+.galleryItem .thumb {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.galleryItem .thumb img {
+    object-fit: cover;
+    max-height: 180%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.galleryItem .thumb::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 24%, rgba(16,88,148,0.6979166666666667) 92%);
+}
+
+.galleryItem .date {
+    position: absolute;
+    color: #f9f8f8;
+    border-radius: 5px;
+    padding: 5px 10px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.galleryItem .date .icons {
+    margin-right: 5px;
+}
+
+.galleryItem .title {
+    position: absolute;
+    border-radius: 5px;
+    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.galleryItem .title a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(0px * -1);
+    margin-right: calc(1.5rem * -.5);
+    margin-left: calc(1.5rem * -.5);
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin-top: 0;
+}
+
+.albumCont {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.albumCarousel {
+    width: 100%;
+    display: block;
+}
+
+.albumCarousel .photoItem {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    height: 600px;
+    width: 100%;
+    background-color: #c1c1c1;
+}
+
+.albumInfo {
+    padding: 20px;
+}
+
+.albumInfo .title {
+    font-weight: 600;
+    color: #207ABF;
+    font-size: 28px;
+}
+
+.albumInfo .date {
+    padding: 5px 10px;
+    display: inline-flex;
+    flex-direction: row;
+    background: #fff;
+    align-items: center;
+    color: #000;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.albumInfo .date span {
+    margin-right: 10px;
+}
+
+.albumInfo .shortstory {
+    color: #000;
+    font-size: 14px;
+}
+
+.paginationWrap {
+    padding: 30px 20px;
+}
+
+.paginationWrap .paginationList {
+    text-align: center;
+}
+
+.paginationWrap .paginationList li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.paginationWrap .paginationList li a:hover {
+    color: #207ABF;
+    border: 1px solid #207ABF !important;
+}
+
+.paginationWrap .paginationList li.active a {
+    background: #207ABF;
+    color: #fff;
+}
+
+.paginationWrap .paginationList li a {
+    padding: 5px 10px;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.paginationWrap .paginationList li.disabled a {
+    color: #ccc;
+    cursor: not-allowed !important;
+}
+
+.paginationWrap .paginationList li:first-child a, .paginationWrap .paginationList li:last-child a {
+    border: 1px solid #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (10px <= width <= 756px) {
+
+    .coverImage {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .gridder-nav {
+        display: none !important;
+    }
+
+    .gridder-show {
+        padding: 20px 15px !important;
+        padding-top: 50px !important;
+    }
+
+    .albumInfo .title {
+        font-size: 20px;
+    }
+
+    .paginationWrap {
+        padding: 20px 0px;
+    }
+
+    .paginationWrap .paginationList li {
+        margin: 0px;
+    }
+
+    .paginationWrap .paginationList li:first-child a, .paginationWrap .paginationList li:last-child a {
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+
+    .paginationWrap .paginationList li a {
+        padding: 5px;
+    }
+
+    .paginationList .active{
+        display: inline-block !important;
+    }
+
+}
+
+@media (min-width: 576px){
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+}

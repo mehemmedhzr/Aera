@@ -166,47 +166,6 @@ goBackMenusSub.forEach((goBackMenu) => {
     });
   });
 
-
-
-$(document).ready(function() {
-  var owl = $(".carousel1");
-  owl.owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 0,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    smartSpeed: 400
-  });
-
-  $(".next").click(function() {
-    owl.trigger("next.owl.carousel");
-  });
-
-  $(".prev").click(function() {
-    owl.trigger("prev.owl.carousel");
-  });
-});
-
-var owl = $('.carousel2');
-owl.owlCarousel({
-    items:3,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      757: {
-        items: 3
-      }
-    }
-});
-
 // GO TO TOP BUTTON
 
 const scrollToTopBtn = document.querySelector('.scrollToTopBtn');
@@ -225,6 +184,9 @@ window.addEventListener('scroll', () => {
     scrollToTopBtn.classList.remove('dFflex');
   }
 });
+
+
+
 
 
 
