@@ -1338,13 +1338,15 @@ textarea {
     transition: all .5s ease;
 }
 
-@media (width>=1200px) {
+@media screen and (width>=1200px) {
     .container {
         max-width: 1400px;
     }
 }
 
-@media only screen and (10px <= width <= 756px) {
+/* (10px <= width <= 756px) */
+
+@media only screen and  (min-width: 10px) and (max-width: 750px){
     .headerTop, .headerBottom{
         display: none;
     }
