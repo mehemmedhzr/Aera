@@ -248,7 +248,7 @@ ul {
     height: 0;
     width: 0;
     z-index: 1;
-    border-bottom: 5px solid rgb(39,58,86);
+    border-bottom: 5px solid #fff;
     animation: grow .5s linear;
     animation-fill-mode: forwards;
 }
@@ -297,7 +297,6 @@ ul {
 
 .dropdown:hover {
     cursor: pointer;
-    background-color: #fffee9;
 }
 
 .dropdown a{
@@ -306,11 +305,28 @@ ul {
 }
 
 .dropdown:hover>a{
-    color: rgb(39,58,86);
     border-right: none;
 }
 
+.arrowDownIconParent{
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: transform 0.4s;
+}
 
+.dropdown:hover .arrowDownIconParent{
+    transform: rotate(360deg);
+}
+
+.arrowDownChild{
+    display: inline-block;
+    /* transform: rotate(180deg); */
+    transition: transform 0.4s;
+}
+
+.childrenPar:hover .arrowDownChild{
+    transform: rotate(-90deg);
+}
 
 .dropdown_menu {
     position: absolute;
@@ -329,12 +345,12 @@ ul {
 
 .dropdown_menu li:hover{
     background-color: rgb(39,58,86);
-    border-bottom-color: #fff;
+    /* border-bottom-color: #fff; */
 }
 
 .dropdown_menu>li {
     display: inline-block;
-    transition: all .7s;
+    transition: all .5s;
     position: relative;
 }
 
@@ -346,8 +362,8 @@ ul {
     height: 0;
     width: 0;
     z-index: 1;
-    border-bottom: 5px solid rgb(164, 167, 172);
-    animation: grow .4s linear;
+    border-bottom: 5px solid #fff;
+    animation: grow .5s linear;
     animation-fill-mode: forwards;
 }
 
@@ -371,7 +387,6 @@ ul {
     background-color: #fff;
     font-size: 16px;
     opacity: 0;
-    border-bottom: 1px solid #dfdfdf;
 }
 
 .dropdown_menu li>a{
@@ -424,7 +439,6 @@ ul {
 .multichildren li:hover a{
     color: #FFF;
     background-color: rgb(39,58,86);
-    /* border-bottom: solid 5px rgb(80, 96, 119); */
 }
 
 .multichildren li a{
@@ -445,7 +459,7 @@ ul {
     height: 0;
     width: 0;
     z-index: 1;
-    border-bottom: 5px solid rgb(164, 167, 172);
+    border-bottom: 5px solid #fff;
     animation: grow .4s linear;
     animation-fill-mode: forwards;
 }
