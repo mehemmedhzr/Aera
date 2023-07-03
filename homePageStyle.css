@@ -234,6 +234,32 @@ ul {
     border-right: solid 1px #fffee9;
 }
 
+.mainMenu>ul>li {
+    display: inline-block;
+    transition: all .7s;
+    position: relative;
+}
+
+.mainMenu>ul>li:hover>a>div>span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    border-bottom: 5px solid rgb(39,58,86);
+    animation: grow .5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    100% {
+        width: 100%;
+    }
+}
+
+
 .mainMenu>ul>li:last-child>a{
     border-right: none;
 }
@@ -282,8 +308,8 @@ ul {
 .dropdown:hover>a{
     color: rgb(39,58,86);
     border-right: none;
-    border-bottom: solid 5px rgb(39,58,86);
 }
+
 
 
 .dropdown_menu {
@@ -303,12 +329,36 @@ ul {
 
 .dropdown_menu li:hover{
     background-color: rgb(39,58,86);
-    border-bottom-color: rgb(80, 96, 119);
+    border-bottom-color: #fff;
+}
+
+.dropdown_menu>li {
+    display: inline-block;
+    transition: all .7s;
+    position: relative;
+}
+
+.dropdown_menu>li:hover>a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    border-bottom: 5px solid rgb(164, 167, 172);
+    animation: grow .4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    100% {
+        width: 100%;
+    }
 }
 
 .dropdown_menu>li:hover>a{
     color: #fffee9;
-    border-bottom: solid 5px rgb(80, 96, 119);
 }
 
 .dropdown:hover .dropdown_menu {
@@ -319,7 +369,6 @@ ul {
     display: none;
     color: #000;
     background-color: #fff;
-    /* padding: 10px 20px; */
     font-size: 16px;
     opacity: 0;
     border-bottom: 1px solid #dfdfdf;
@@ -340,7 +389,7 @@ ul {
 }
 
 .dropdown:hover .dropdown_menu-7 {
-    animation: rotateMenu 400ms ease-in-out forwards;
+    animation: rotateMenu 700ms ease-in-out forwards;
 }
 
 @keyframes rotateMenu {
@@ -375,7 +424,36 @@ ul {
 .multichildren li:hover a{
     color: #FFF;
     background-color: rgb(39,58,86);
-    border-bottom: solid 5px rgb(80, 96, 119);
+    /* border-bottom: solid 5px rgb(80, 96, 119); */
+}
+
+.multichildren li a{
+    border-bottom: solid 5px transparent;
+}
+
+.multichildren>li {
+    display: inline-block;
+    transition: all .4s;
+    position: relative;
+}
+
+.multichildren>li:hover>a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    border-bottom: 5px solid rgb(164, 167, 172);
+    animation: grow .4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    100% {
+        width: 100%;
+    }
 }
 
 .searchArea{
